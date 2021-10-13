@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <title>Blog Website!</title>
+</head>
+
+<body style="background-color: hsl(84, 3%, 94%);">
+    <header class="main-header">
+        <div class="d-flex justify-content-center align-items-center flex-column py-5">
+            <h1 class="main-heading">Tech Blog</h1>
+            <p class="main-heading-para">Welcom to my <span class="bg-dark text-white text-capitalize py-2 px-3">Tech
+                    Blog</span></p>
+        </div>
+        <!-- The main Image -->
+        <div class="main-header-div d-flex align-items-start justify-content-center flex-column pl-5">
+            <p> Bloging Website </p>
+            <h2 class="animatedword">
+                <span>He is</span>
+                <div>
+                    <ul class="flip">
+                        <li>a Programer</li>
+                        <li>a Youtuber</li>
+                        <li>a Freelancer</li>
+                        <li> Awesom</li>
+                    </ul>
+                </div>
+            </h2>
+            <button class="text-uppercase"> Subscribe</button>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- two side div start -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- to get left and right side div space -->
+            <div class="col-xl-10 col-lg-10 col-md-11 col-11 mx-auto my-5">
+                <div class="row gx-5 mx-sm-auto">
+                    <!--**********  Left Side div Start ****************-->
+                    <div class="col-lg-8 col-md-11 col-sm-11 mx-auto">
+                        <div class="row gy-5">
+                            <!-- our first post code -->
+                            <div class="col-12 card p-4 shadow blog-left-div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5">
+                                    <h1>Best Laptop</h1>
+                                    <p class="blog-title"><span class="font-weight-bold">Title description, </span>31
+                                        May 2021</p>
+                                </div>
+                                <figure class="right-side-img mb-5">
+                                    <img src="https://cdn.pixabay.com/photo/2014/05/02/21/50/laptop-336378_960_720.jpg"
+                                        class="img-fluid shadow">
+                                </figure>
+                                <p><span class="font-weight-bold">Blog</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Incidunt, quisquam ut? Iste, aspernatur quas minus laborum quasi modi delectus
+                                    pariatur porro omnis
+                                    voluptatem cumque mollitia quod saepe debitis commodi.
+                                    Consequatur!
+                                </p>
+                                <div class="d-flex justify-content-between left-div-btn">
+                                    <div>
+                                        <button class="left-div-like" id="like-btn">
+                                            <i class="fas fa-thumbs-up"></i> Like
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="left-div-reply" onclick="reply('reply1')">
+                                            Replys <badge class="bg-white text-dark p-2">1</badge>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- First Post Comment section -->
+                                <div class="replies" id="reply1">
+                                    <div
+                                        class="d-flex justify-content-start align-self-center flex-row card reply-card p-3">
+                                        <div class="reply-img mx-2 align-items-center">
+                                            <i class="fas fa-user-circle"></i>
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="reply-text-left">
+                                            <p class="bolg-title">
+                                                <span class="font-weight-bold">Umar</span> 31 jume 2021
+                                            </p>
+                                            <p>Awesom love you content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--************* 2nd post section *********** -->
+                            <div class="col-12 card p-4 shadow blog-left-div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5">
+                                    <h1>Best Laptop</h1>
+                                    <p class="blog-title"><span class="font-weight-bold">Title description, </span>31
+                                        May 2021</p>
+                                </div>
+                                <figure class="right-side-img mb-5">
+                                    <img src="https://cdn.pixabay.com/photo/2017/11/27/21/31/computer-2982270_960_720.jpg"
+                                        class="img-fluid shadow">
+                                </figure>
+                                <p><span class="font-weight-bold">Blog</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Incidunt, quisquam ut? Iste, aspernatur quas minus laborum quasi modi delectus
+                                    pariatur porro omnis
+                                    voluptatem cumque mollitia quod saepe debitis commodi.
+                                    Consequatur!
+                                </p>
+                                <div class="d-flex justify-content-between left-div-btn">
+                                    <div>
+                                        <button class="left-div-like" id="like-btn">
+                                            <i class="fas fa-thumbs-up"></i> Like
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="left-div-reply" onclick="reply('reply2')">
+                                            Replys <badge class="bg-white text-dark p-2">2</badge>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- 2nd Post 1st Comment  -->
+                                <div class="replies" id="reply2">
+                                    <div
+                                        class="d-flex justify-content-start align-self-center flex-row card reply-card p-3">
+                                        <div class="reply-img mx-2 align-items-center">
+                                            <i class="fas fa-user-circle"></i>
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="reply-text-left">
+                                            <p class="bolg-title">
+                                                <span class="font-weight-bold">Umar</span> 31 jume 2021
+                                            </p>
+                                            <p>Awesom love you content.</p>
+                                        </div>
+                                    </div>
+                                    <!-- 2nd post 2nd commetn -->
+                                    <div
+                                        class="d-flex justify-content-start align-self-center flex-row card reply-card p-3">
+                                        <div class="reply-img mx-2 align-items-center">
+                                            <i class="fas fa-user-circle"></i>
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="reply-text-left">
+                                            <p class="bolg-title">
+                                                <span class="font-weight-bold">Umar</span> 31 jume 2021
+                                            </p>
+                                            <p>Awesom love you content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3rd post section -->
+                            <div class="col-12 card p-4 shadow blog-left-div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5">
+                                    <h1>Best Laptop</h1>
+                                    <p class="blog-title"><span class="font-weight-bold">Title description, </span>31
+                                        May 2021</p>
+                                </div>
+                                <figure class="right-side-img mb-5">
+                                    <img src="https://cdn.pixabay.com/photo/2017/06/20/23/15/coffee-2425303_960_720.jpg"
+                                        class="img-fluid shadow">
+                                </figure>
+                                <p><span class="font-weight-bold">Blog</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Incidunt, quisquam ut? Iste, aspernatur quas minus laborum quasi modi delectus
+                                    pariatur porro omnis
+                                    voluptatem cumque mollitia quod saepe debitis commodi.
+                                    Consequatur!
+                                </p>
+                                <div class="d-flex justify-content-between left-div-btn">
+                                    <div>
+                                        <button class="left-div-like" id="like-btn">
+                                            <i class="fas fa-thumbs-up"></i> Like
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="left-div-reply" onclick="reply('reply3')">
+                                            Replys <badge class="bg-white text-dark p-2">3</badge>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- 3rd Post 1st Comment -->
+                                <div class="replies" id="reply3">
+                                    <div
+                                        class="d-flex justify-content-start align-self-center flex-row card reply-card p-3">
+                                        <div class="reply-img mx-2 align-items-center">
+                                            <i class="fas fa-user-circle"></i>
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="reply-text-left">
+                                            <p class="bolg-title">
+                                                <span class="font-weight-bold">Umar</span> 31 jume 2021
+                                            </p>
+                                            <p>Awesom love you content.</p>
+                                        </div>
+                                    </div>
+                                    <!-- 3rd post 2nd comment -->
+                                    <div
+                                        class="d-flex justify-content-start align-self-center flex-row card reply-card p-3">
+                                        <div class="reply-img mx-2 align-items-center">
+                                            <i class="fas fa-user-circle"></i>
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="reply-text-left">
+                                            <p class="bolg-title">
+                                                <span class="font-weight-bold">Umar</span> 31 jume 2021
+                                            </p>
+                                            <p>Awesom love you content.</p>
+                                        </div>
+                                    </div>
+                                    <!-- 3rd post 3rd comment -->
+                                    <div
+                                        class="d-flex justify-content-start align-self-center flex-row card reply-card p-3">
+                                        <div class="reply-img mx-2 align-items-center">
+                                            <i class="fas fa-user-circle"></i>
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="reply-text-left">
+                                            <p class="bolg-title">
+                                                <span class="font-weight-bold">Umar</span> 31 jume 2021
+                                            </p>
+                                            <p>Awesom love you content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--********** Left Side div end **************-->
+
+                    <!--********** Right Side div Start **************-->
+                    <div class="col-lg-3 col-md-7 col-11 justify-content-end m-lg-0 m-auto">
+                        <div class="row gy-5 right-div-blog">
+                            <!-- about me -->
+                            <div class="col-12 about-me-div shadow">
+                                <p>Writer Name</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Suscipit id voluptas cupiditate voluptatem minus inventore.
+                                    Suscipit id voluptas cupiditate voluptatem minus inventore.
+                                </p>
+                            </div>
+                            <!-- popluar post  -->
+                            <div class="popular-post">
+                                <div class="right-div-title py-4 pl-2">
+                                    <h2>popular post</h2>
+                                </div>
+                                <div class="right-sub-div shadow">
+                                    <div class="row">
+                                        <div class="col-3 popular-post-img1 py-2 pl-2">
+                                        </div>
+                                        <div class="col-9">
+                                            <h3>Bill Gates </h3>
+                                            <p>CEO Microsoft</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-3 popular-post-img2 py-2 pl-2">
+                                        </div>
+                                        <div class="col-9">
+                                            <h3> Mark Zuckerberg </h3>
+                                            <p>Programmer</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 popular-post-img3 py-2 pl-2">
+                                        </div>
+                                        <div class="col-9">
+                                            <h3> Jeff Bezos </h3>
+                                            <p>Amazon</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-3 popular-post-img4 py-2 pl-2">
+                                        </div>
+                                        <div class="col-9">
+                                            <h3>
+                                                Steve Jobs </h3>
+                                            <p>Apple</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Advertise -->
+                            <div class="right-div-post">
+                                <div class="right-div-title py-4 pl-2">
+                                    <h2>Advertise</h2>
+                                </div>
+                                <div class="right-sub-div">
+                                    <div class="advertise-img bg-light shadow">
+                                        <p>Ads goes here</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tages -->
+                            <div class="right-div-post">
+                                <div class="right-div-title py-4 pl-2">
+                                    <h2>Tags</h2>
+                                </div>
+                                <div class=" tags-main right-sub-div">
+                                    <!--tags-main a  //Text Decoration is not working -->
+                                    <a href="#" class="badge shadow text-capitalize">HTML</a>
+                                    <a href="#" class="badge shadow text-capitalize"> css </a>
+                                    <a href="#" class="badge shadow text-capitalize">js</a>
+                                    <a href="#" class="badge shadow text-capitalize">react</a>
+                                    <a href="#" class="badge shadow text-capitalize">vue</a>
+                                    <a href="#" class="badge shadow text-capitalize">php</a>
+                                    <a href="#" class="badge shadow text-capitalize">pythonL</a>
+                                    <a href="#" class="badge shadow text-capitalize">kotlin</a>
+                                    <a href="#" class="badge shadow text-capitalize">c++</a>
+                                    <a href="#" class="badge shadow text-capitalize">java </a>
+                                </div>
+                            </div>
+                            <!-- Inspiration -->
+                            <div class="right-div-post">
+                                <div class="right-div-title py-4 pl-2">
+                                    <h2>Inspiration</h2>
+                                </div>
+                                <div class="right-sub-div">
+                                    <div class="row gx-3">
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_960_720.png"
+                                                    alt="" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_960_720.png"
+                                                    alt="" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_960_720.png"
+                                                    alt="" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_960_720.png"
+                                                    alt="" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Social Media Links -->
+                            <div class="right-div-post">
+                                <div class="right-div-title py-4 pl-2">
+                                    <h2>Follow Me</h2>
+                                </div>
+                                <div class="right-sub-div d-flex justify-content-around">
+                                    <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                                    <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+                                    <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+                                    <a href="#"><i class="fab fa-youtube fa-3x"></i></a>
+                                </div>
+                            </div>
+                            <!-- Subscribe News lettr -->
+                            <div class="right-div-post">
+                                <div class="right-div-title py-4 pl-2">
+                                    <h2>Subscribe</h2>
+                                </div>
+                                <div class="right-sub-div">
+                                    <form action="">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-lable">Enter your
+                                                email below and get notified on the latest blog posts.</label>
+                                            <input type="email" class="form-control mt-2" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <button type="submit" class="subs-btn d-block">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--*********** Right Side div end  ****************-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer start  -->
+    <footer>
+        <p class="text-center py-4 bg-light">design with love By © Umar</p>
+    </footer>
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script>
+        //like button 
+        //to get the id of like button\
+        const like = document.getElementById('like-btn')
+        const singleClick = () => {
+            like.style.fontWeight = 'bold';
+            like.style.background = '#bbe1fa';
+            like.style.color = '#1b262c';
+            like.innerHTML = '✓ Liked;'
+        }
+        const doubleClick = () => {
+            like.style.fontWeight = 'normal';
+            like.style.background = '#3282b8';
+            like.style.color = '#fff';
+            like.innerHTML = 'Like';
+
+        }
+        //2nd step call the function on click and then dclick
+
+
+        var clickCount = 0;
+        like.addEventListener('click', function () {
+            clickCount++;
+            if (clickCount === 1) {
+                singleClickTimer = setTimeout(function () {
+                    clickCount = 0;
+                    singleClick();
+                }, 400);
+            } else if
+                (clickCount === 2) {
+                clearTimeout(singleClickTimer);
+                clickCount = 0;
+                doubleClick();
+            }
+        }, false);
+
+        //comment section
+        const reply = (res) => {
+            var res = document.getElementById(res);
+            console.log(res);
+            if (res.className == "replies") {
+                res.className = "show";
+            }
+            else if
+                (res.className == "show") {
+                res.className = "replies";
+            }
+        }
+    </script>
+</body>
+
+</html>
